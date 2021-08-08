@@ -8,5 +8,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'jiangmiao/auto-pairs'
     " Color scheme
     Plug 'gruvbox-community/gruvbox'
+    " Auto complete with coc
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
