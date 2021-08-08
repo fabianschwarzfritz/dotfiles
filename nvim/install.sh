@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -e
+
 # Great setup how-to: https://www.chrisatmachine.com/Neovim/01-vim-plug/
 
 # Install neovim itself
@@ -17,6 +19,6 @@ brew_install "neovim"
 # vim-plug  is the plugin manager we're gonna be using.
 # More documenation is here: https://github.com/junegun/vim-plug
 curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-vim +'PlugInstall --sync' +qa
+nvim +'PlugInstall --sync' +'PlugUpdate' +qa
 
 echo "Successfully installed neovim, vim-plug and loaded plugins"
