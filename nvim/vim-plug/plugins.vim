@@ -11,6 +11,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Auto complete with coc
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     " Refactoring on local machine and their dependencies
+    Plug 'nvim-lua/popup.nvim'
     Plug 'nvim-lua/plenary.nvim'
     Plug 'nvim-treesitter/nvim-treesitter'
     Plug 'tree-sitter/tree-sitter-typescript'
